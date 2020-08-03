@@ -1,0 +1,42 @@
+.composition {
+    position: relative;
+
+    &__image {
+        width: 20%;
+        max-height: $photo-height-small;
+        // transform: translate(-50% , -100%);
+        box-shadow: 0 1.5rem 3rem rgba($color-dark, .2);
+        border-radius: 1.5rem;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+
+        &--1 {
+            top: -55rem;
+            right: 40%;
+        }
+
+        &--2 {
+            top: -40rem;
+            right: 55%;
+        }
+
+        &--3 {
+            top: -28rem;
+            right: 40%;
+        }
+
+        &--4 {
+            top: -40rem;
+            right: 25%;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+            box-shadow: 0 2rem 3rem rgba($color-dark, .5);
+            z-index: 20;
+        }
+        
+        
+    }
+}

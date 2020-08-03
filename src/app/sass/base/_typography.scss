@@ -1,0 +1,89 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 0 2rem;
+}
+
+.heading-primary {
+    color: $text-primary;
+    text-transform: uppercase;
+    margin-bottom: 8rem;
+
+    
+    &--main {
+        display: block;
+        font-size: 10rem;
+        font-weight: 600;
+        letter-spacing: 6rem;
+        animation: moveInUp 1.5s ease-in-out 1s;
+        animation-fill-mode: backwards;
+        padding-left: 6rem ;
+    }
+
+    &--submain {
+        display: block;
+        font-size: 4rem;
+        font-weight: 500;
+        letter-spacing: 10rem;
+        margin-top: -5rem;
+        animation: moveInUp 1.5s ease-in-out 1s;
+        animation-fill-mode: backwards;
+        padding-left: 10rem ;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        margin-top: 3rem;
+        font-weight: 400;
+        letter-spacing: 3rem;
+        animation: moveInUpDelay 1.5s ease-in-out 1s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.heading-secondary {
+    font-size: 5rem;
+    font-weight: 800;
+    display: inline-block;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right , $color-primary , $color-primary-dark );
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &--stylechange {
+        padding: 0 2rem;
+        position: relative;
+        float: right;
+        margin-left: .5rem;
+        color: $color-primary;
+        transition: all 1s;
+    }
+}
+
+.heading-tertiary {
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    color: $text-primary-dark;
+}
+
+.paragraph {
+    font-size: 1.8rem;
+    font-weight: 400;
+    display: inline-block;
+    color: $text-secondary-dark;
+
+    &:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+}
+
+.section-about:hover .heading-secondary--stylechange{
+    background-color: $color-primary;
+    color: $text-primary;
+    margin-top: -.3rem;
+    transform: rotate(5deg);
+}

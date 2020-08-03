@@ -1,0 +1,5 @@
+@import '../../../styles.scss';
+.btn--booknow {
+    animation: moveInBottom 1.5s ease-out 2s;
+    animation-fill-mode: backwards;
+}
