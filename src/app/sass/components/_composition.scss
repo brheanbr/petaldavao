@@ -32,11 +32,13 @@
         }
 
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.2) translateY(-1rem);
             box-shadow: 0 2rem 3rem rgba($color-dark, .5);
             z-index: 20;
         }
-        
-        
+    }
+
+    &:hover &__image:not(:hover) {
+        transform: scale(.9);
     }
 }
