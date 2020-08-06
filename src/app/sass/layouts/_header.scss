@@ -19,6 +19,7 @@
         &--logo {
             height: 15rem;
             animation: rotateMoveUp 4s ease-in-out;
+            filter: invert(100%);
         }
     }
 
